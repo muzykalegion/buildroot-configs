@@ -2,6 +2,8 @@ import cv2
 
 cv2.setNumThreads(4)
 
+# gst-launch-1.0 libcamerasrc ! video/x-raw,format=NV12,width=800,height=600,framerate=30/1 ! queue ! videoconvert ! kmssink
+
 pipeline = 'libcamerasrc ! video/x-raw,width=640,height=480,format=BGR ! appsink sync=false drop=true'
 camera = cv2.VideoCapture(pipeline, cv2.CAP_GSTREAMER)
 
