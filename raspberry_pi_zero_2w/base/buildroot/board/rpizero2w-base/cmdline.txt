@@ -1,0 +1,1 @@
+root=/dev/mmcblk0p2 rootwait console=tty1 vt.global_cursor_default=1 brcmfmac.debug=0x1416 video=HDMI-A-1:640x480@60
