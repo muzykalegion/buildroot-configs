@@ -1,0 +1,25 @@
+dtoverlay=vc4-kms-v3d
+max_framebuffers=1
+# Composite video PAL
+#sdtv_mode=2
+#enable_tvout=1
+#hdmi_ignore_hotplug=1
+gpu_mem=256
+disable_splash=1
+
+# UARTs
+dtoverlay=disable-bt
+enable_uart=1
+dtoverlay=uart2
+dtoverlay=uart3
+dtoverlay=uart4
+dtoverlay=uart5
+
+# Config
+#dtparam=i2c_arm=on
+#dtparam=spi=on
+enable_dpi_lcd=0
+disable_overscan=1
+hdmi_force_hotplug=1
+hdmi_group=2
+hdmi_mode=4

@@ -1,0 +1,6 @@
+config BR2_PACKAGE_YAMSPY
+    bool "yamspy"
+    depends on BR2_PACKAGE_PYTHON3
+    depends on BR2_PACKAGE_PYTHON_SERIAL
+    help
+      YAMSPy is a MSP provider for FC (Betaflight, iNAV, etc.) telemetry

@@ -1,0 +1,7 @@
+config BR2_PACKAGE_PYTHON_LINUXPY
+    bool "python-linuxpy"
+    depends on BR2_PACKAGE_PYTHON3
+    depends on BR2_PACKAGE_PYTHON_PIP
+    help
+      linuxpy — Python bindings for Linux input devices.
+      https://github.com/tiagocoutinho/linuxpy
