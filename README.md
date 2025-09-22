@@ -60,6 +60,6 @@ make xconfig
 The changes will be saved in `.config` file under Buildroot's root dir.
 
 ## Flash SD Card
-See [BUILDROOT.md](BUILDROOT.md)
+See [BUILDROOT.md#-creating-bootable-sd-card](BUILDROOT.md#-creating-bootable-sd-card)
 
 
