@@ -24,8 +24,19 @@ git checkout 2025.05
 Copy all the content from desired platform/module folder into buildroot's directory.\
 Corresponding `.config` (and `flash_rpi.sh` which is optional) should appear under buildroot main dir, specific contents goes to `buildroot/board/<platform-module>` \
 E.g. to build RPiZero2W _base_ config the contents of `raspberry_pi_zero_2w/base/buildroot` should go to `~/workspace/buildroot` or whatever dir Buildroot cloned to.
+---
+❗ **NOTE**: Might need to update `.config` to specify correct path
 
+    BR2_DEFCONFIG="/media/muzyka/1TB/buildroot/configs/raspberrypizero2w_64_defconfig"
+
+Next command should set this 
+```bash
+make raspberrypizero2w_64_defconfig
+```
+---
 ⚠️ **NOTE**: Do not forget to review and set up your _Wi-Fi config_ in corresponding `buildroot/board/<board>/post-build.sh` script 
+
+---
 
 ### Configuration
 
