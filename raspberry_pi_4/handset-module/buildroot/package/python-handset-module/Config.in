@@ -1,0 +1,6 @@
+config BR2_PACKAGE_PYTHON_HANDSET_MODULE
+	bool "python_handset_module"
+	depends on BR2_PACKAGE_PYTHON3
+	depends on BR2_PACKAGE_PYTHON_SERIAL
+	help
+	  Python version of Handset module targeting system
