@@ -28,10 +28,10 @@ start_x=1
 gpu_mem=128
 
 # Camera module setup
-#dtoverlay=imx219
+dtoverlay=imx219
 #dtoverlay=imx477
 #dtoverlay=ov5647
-dtoverlay=imx708
+#dtoverlay=imx708
 camera_auto_detect=0
 #dtparam=i2c_arm=on
 #dtoverlay=i2c0
