@@ -2,12 +2,12 @@ import cv2
 
 cv2.setNumThreads(4)
 
-# gst-launch-1.0 libcamerasrc ! video/x-raw,format=NV12,width=800,height=600,framerate=30/1 ! queue ! videoconvert ! kmssink
+# gst-launch-1.0 libcamerasrc ! video/x-raw,format=NV12,width=800,height=600,framerate=30/1 ! queue ! videoconvert ! fbdevsink
 
 pipeline = 'libcamerasrc ! video/x-raw,width=640,height=480,format=BGR ! appsink sync=false drop=true'
 camera = cv2.VideoCapture(pipeline, cv2.CAP_GSTREAMER)
 
-pipe_out = 'appsrc ! video/x-raw,width=640,height=480,format=BGR ! queue ! videoconvert ! kmssink sync=false'
+pipe_out = 'appsrc ! video/x-raw,width=640,height=480,format=BGR ! queue ! videoconvert ! fbdevsink sync=false'
 stream_out = cv2.VideoWriter(pipe_out, cv2.CAP_GSTREAMER, 0, 30.0, (640, 480), True)
 
 while True:
